@@ -33,7 +33,7 @@ ROOT_URLCONF = 'Hartdisease.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates'],
+        'DIRS': [BASE_DIR / 'predictor' / 'templates'],  # or use your preferred path
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -56,3 +56,5 @@ DATABASES = {
     }
 }
 
+# Static files (CSS, JavaScript, Images)
+STATIC_URL = '/static/'
