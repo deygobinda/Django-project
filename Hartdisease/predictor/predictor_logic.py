@@ -22,7 +22,7 @@ def make_prediction(features):
     
     # Assuming binary classification: 1 indicates high risk, 0 indicates low risk.
     if prediction[0] == 1:
-        result = "High risk of heart disease."
+        result = "The Person has Heart Disease."
     else:
-        result = "Low risk of heart disease."
+        result = "The Person does not have a Heart Disease."
     return result
